@@ -11,8 +11,7 @@
                     Buat jadi keren
                 </p>
             </div>
-        </div>
-
+            
         <div class="about-container">
             <h1>Tentang kami</h1>
             <p>
@@ -22,6 +21,8 @@
                 Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci.
             </p>
         </div>
+        </div>
+
 
         <div class="statistic-container">
             <div class="stat-comp-container">
@@ -70,6 +71,9 @@ export default {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;300;800&display=swap');
+:root {
+    --margintop: 20em;
+}
 .container {
     background-color: #f9f9f9;
     padding-bottom: 10em;
@@ -103,6 +107,8 @@ export default {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
+    position: absolute;
+    margin-top: 60em
 }
 .about-container h1{
     font-weight: 600;
@@ -110,8 +116,7 @@ export default {
 }
 .statistic-container {
     width: 100%;
-    margin-top: 3em;
-    
+    margin-top: 23em;
     display: flex;
     flex-direction: row;
     justify-content: center;
