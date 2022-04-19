@@ -4,6 +4,11 @@ import App from './App.vue';
 const routes = [
     {
         path: '/',
+        name: 'priti-landing',
+        component: () => import('./pages/priti/PritiLanding.vue')
+    },
+    {
+        path: '/app',
         name: 'app',
         component: App,
         children: [
