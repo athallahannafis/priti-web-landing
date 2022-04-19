@@ -40,6 +40,19 @@
                 <p class="stat-detail">Rating di playstore</p>
             </div>
         </div>
+
+        <div class="fitur-container">
+            <h1>Fitur</h1>
+            <div class="fitur-content">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor.
+                </p>
+            </div>
+        </div>
+
+        <div class="mitra-container">
+            
+        </div>
         <!-- <img src="../../assets/priti/header-bg.png"/> -->
     </div>
 </template>
@@ -50,7 +63,7 @@ import PritiTopBar from './PritiTopBar.vue';
 export default {
     components: {
         'PritiTopBar': PritiTopBar,
-    }
+    },
 }
 </script>
 
@@ -65,7 +78,6 @@ export default {
     background-image: url("../../assets/priti/header-bg.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    
     height: 70em;
     position: relative;
     /* z-index: -1; */
@@ -130,5 +142,35 @@ export default {
     font-family: 'Open Sans', sans-serif;
     font-size: 2em;
 
+}
+.fitur-container {
+    margin-top: 10em;
+    padding: 10em;
+    background-image: url("../../assets/priti/fitur.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.fitur-container h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.fitur-content {
+    max-width: 55%;
+}
+.fitur-content p {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 1.5em;
+}
+.mitra-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 </style>
