@@ -1,26 +1,21 @@
 <template>
-    <div class="layout-topbar">
+    <div class="topbar-priti">
         <router-link to="/" class="layout-topbar-logo">
             <img alt="Logo" :src="topbarImage()" />
-            <span>SAKAI</span>
+            <span>LOGO_PRITI</span>
         </router-link>
 
-        <button class="p-link layout-topbar-menu-button layout-topbar-button"
-            v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein', 
-            leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true}">
-            <i class="pi pi-ellipsis-v"></i>
-        </button>
         
 
         <ul class="layout-topbar-menu hidden lg:flex origin-top">
             <li>
-                <Button label="Tentang kami" @click="test()" class="p-button-link mr-2 mb-2" />
+                <Button label="Tentang kami" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
             </li>
             <li>
-                <Button label="Mitra" @click="test()" class="p-button-link mr-2 mb-2" />
+                <Button label="Mitra" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
             </li>
             <li>
-                <Button label="Fitur" @click="test()" class="p-button-link mr-2 mb-2" />
+                <Button label="Fitur" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
             </li>
         </ul>
     </div>
@@ -49,3 +44,16 @@ export default {
     }
 }
 </script>
+<style scoped>
+.topbar-bg {
+    background-image: url("../../assets/priti/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 70em;
+    position: absolute;
+    z-index: -1;
+}
+.font-button-color{ 
+    color:white;
+}
+</style>
