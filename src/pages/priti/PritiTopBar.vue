@@ -9,13 +9,13 @@
 
         <ul class="layout-topbar-menu hidden lg:flex origin-top">
             <li>
-                <Button label="Tentang kami" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
+                <Button label="Tentang kami" @click="smoothScroll('.about-container')" class="p-button-link mr-2 mb-2 font-button-color" />
             </li>
             <li>
                 <Button label="Mitra" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
             </li>
             <li>
-                <Button label="Fitur" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
+                <Button label="Fitur" @click="smoothScroll('.fitur-container')" class="p-button-link mr-2 mb-2 font-button-color" />
             </li>
         </ul>
     </div>
@@ -35,6 +35,11 @@ export default {
         },
         test() {
             console.log("Pressed");
+        },
+        smoothScroll(id){
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth'
+            });
         }
     },
     computed: {
@@ -45,14 +50,6 @@ export default {
 }
 </script>
 <style scoped>
-.topbar-bg {
-    background-image: url("../../assets/priti/header-bg.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 70em;
-    position: absolute;
-    z-index: -1;
-}
 .font-button-color{ 
     color:white;
 }
