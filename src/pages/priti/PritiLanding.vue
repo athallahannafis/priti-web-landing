@@ -11,17 +11,14 @@
                     Buat jadi keren
                 </p>
             </div>
-            
-            <div class=" grid justify-content-center">
-                <div class="about-container ">
-                    <h1>Tentang kami</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. 
-                        Praesent eleifend pretium leo, eu faucibus leo porttitor ac. 
-                        Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci.
-                    </p>
-                </div>
+            <div class="about-container ">
+                <h1>Tentang kami</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                    Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. 
+                    Praesent eleifend pretium leo, eu faucibus leo porttitor ac. 
+                    Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci.
+                </p>
             </div>
         </div>
 
@@ -44,13 +41,18 @@
             </div>
         </div>
 
-        <div class="fitur-container grid my-8 pt-2 md:pt-8">
-            <h1>Fitur</h1>
-            <div class="fitur-content ">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor.
-                </p>
+        <div class="fitur-container">
+            <div class="flex flex-column align-items-start grid my-8 pt-90">
+                <h1>Fitur</h1>
+                <div class="fitur-content ">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. Praesent eleifend pretium leo, eu faucibus leo porttitor ac. Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci. Suspendisse suscipit, mi nec suscipit rutrum, erat mi fringilla ex, ac suscipit dui lectus ac tortor.
+                    </p>
+                </div>
             </div>
+            <!-- <div class="flex justify-content-center col-12 lg:col-6 p-0 flex-order-1 lg:flex-order-0" style="border-radius:8px;">
+                <img class="w-9" :src="'images/priti/fitur-phone.png'"/>
+            </div> -->
         </div>
 
         <div class="mitra-container">
@@ -68,14 +70,59 @@
                 </Carousel>
         </div>
 
-        <div class="daftar-container mt-8 mb-8 bg-white">
-            <div class="flex flex-column justify-content-center align-items-center text-center px-3 py-3 md:py-0">
-                <h3 class="text-gray-900 mb-2">Joséphine Miller</h3>
-                <span class="text-gray-600 text-2xl">Peak Interactive</span>
-                
+        <div class="daftar-container mt-8 mb-8 ">
+            <div class="daftar-content flex flex-column justify-content-center align-items-center text-center">
+                <h1 class="mb-5">Ingin salonmu ada di Priti.id?</h1>
+                <span class="daftar-desc text-2xl">Kembangkan bisnismu bersama kami, perbanyak income salonmu bersama Priti!</span>
+                <Button  class="p-button-info mt-7" >
+                    <span class="gabung-sekarang">
+                        Gabung sekarang
+                    </span>
+                </Button>
             </div>
         </div>
         <!-- <img src="../../assets/priti/header-bg.png"/> -->
+       
+    </div>
+     <div class="footer-landing flex flex-row align-items-center justify-content-between px-7 py-7">
+        <div class="footer-container flex flex-column align-items-start w-3 ml-2 mr-2">
+            <img style="width:120px" :src="'images/priti/logo.png'" />
+            <div class="mt-3">
+                <p class="footer-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </div>
+
+            <div class="flex flex-row mt-8">
+                <img :src="'images/priti/twitter.png'" class="ml-2 mr-2" />
+                <img :src="'images/priti/instagram.png'" class="ml-2 mr-2" />
+                <img :src="'images/priti/facebook.png'" class="ml-2 mr-2" />
+            </div>
+
+            <div class="footer-text mt-8">
+                <p>© Priti 2022, All Rights Reserved</p>
+            </div>
+        </div>
+
+        <div class="footer-container flex flex-row align-items-start justify-content-start w-3 ml-2 mr-8">
+            <div class="flex flex-column align-items-start ml-6 mr-6">
+                <p class="footer-text footer-title mt-2 mb-4">Tentang kami</p>
+                <p class="footer-text mt-2 mb-2">Aplikasi</p>
+                <p class="footer-text mt-2 mb-2">Solutions</p>
+                <p class="footer-text mt-2 mb-2">Blog</p>
+                <p class="footer-text mt-2 mb-2">Company</p>
+            </div>
+            <div class="flex flex-column align-items-start ml-6 mr-6">
+                <p class="footer-text footer-title mt-2 mb-4">Mitra</p>
+                <p class="footer-text mt-2 mb-2">Mitra</p>
+                <p class="footer-text mt-2 mb-2">Gabung</p>
+            </div>
+            <div class="flex flex-column align-items-start ml-6 mr-6">
+                <p class="footer-text footer-title mt-2 mb-4">Fitur</p>
+                <p class="footer-text mt-2 mb-2">Fitur</p>
+                <p class="footer-text mt-2 mb-2">Unduh</p>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -254,10 +301,10 @@ export default {
 .upper-title-container{
     font-family: 'Poppins', sans-serif;
     font-weight:600;
-    margin-top:20em;
-    position:absolute;
-    
-    padding: 10em;
+    margin-top:22em;
+    margin-left: 6em;
+    margin-right: 10em;
+    position:absolute;    
 }
 .upper-title-container p{
     font-size: 5em;
@@ -320,19 +367,23 @@ export default {
 }
 .fitur-container {
     margin-top: 10em;
-    padding: 10em;
-    background-image: url("../../assets/priti/fitur.png");
+    padding-left: 10em;
+    padding-right: 10em;
+    background-image: url("../../../public/images/priti/fitur.png");
     background-repeat: no-repeat;
     background-size: 100%;
     height: 70em;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    align-items: center;
 }
 .fitur-container h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: white;
+}
+.fitur-container img {
+    
 }
 .fitur-content {
     max-width: 55%;
@@ -356,5 +407,47 @@ export default {
 .custom-carousel {
     min-width: 100rem; 
     max-width:100rem;
+}
+.daftar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.daftar-content {
+    border-radius: 10px;
+    background: white;
+    padding: 10em;
+    padding-top:4em;
+    padding-bottom:4em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d0d0d0;
+}
+.daftar-content h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color:#005faa;
+}
+.daftar-desc {
+    font-family: 'Open Sans', sans-serif;
+    color: #6f809a
+}
+.gabung-sekarang {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+.footer-landing {
+    background: white;
+
+}
+.footer-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #454545;
+    font-size:24px;
+}
+.footer-title {
+    color:#005faa;
+    font-weight: bold;
 }
 </style>
