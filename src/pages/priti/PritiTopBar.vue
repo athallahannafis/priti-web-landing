@@ -16,7 +16,7 @@
                     <Button label="Tentang kami" @click="smoothScroll('.about-container')" class="p-button-link mr-2 mb-2 font-button-color" />
                 </li>
                 <li>
-                    <Button label="Mitra" @click="test()" class="p-button-link mr-2 mb-2 font-button-color" />
+                    <Button label="Mitra" @click="smoothScroll('.mitra-container')" class="p-button-link mr-2 mb-2 font-button-color" />
                 </li>
                 <li>
                     <Button label="Fitur" @click="smoothScroll('.fitur-container')" class="p-button-link mr-2 mb-2 font-button-color" />
