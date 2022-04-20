@@ -66,7 +66,14 @@
                         />
                     </template>
                 </Carousel>
-            
+        </div>
+
+        <div class="daftar-container mt-8 mb-8 bg-white">
+            <div class="flex flex-column justify-content-center align-items-center text-center px-3 py-3 md:py-0">
+                <h3 class="text-gray-900 mb-2">Joséphine Miller</h3>
+                <span class="text-gray-600 text-2xl">Peak Interactive</span>
+                
+            </div>
         </div>
         <!-- <img src="../../assets/priti/header-bg.png"/> -->
     </div>
@@ -350,5 +357,4 @@ export default {
     min-width: 100rem; 
     max-width:100rem;
 }
-
 </style>
