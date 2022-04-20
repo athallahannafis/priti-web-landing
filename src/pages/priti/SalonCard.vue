@@ -8,7 +8,7 @@
                 {{ name }}
             </h4>
             <h6 class="mt-0 mb-3">Kota {{ city }}</h6>
-            <div class="salon-footer mt-1">
+            <div class="flex flex-row align-items-center mt-1">
                 <img class="star mr-2" :src="'images/priti/star.png'"/>
                 <p>{{ rating }} | {{ transactions }} transaksi</p>
             </div>
