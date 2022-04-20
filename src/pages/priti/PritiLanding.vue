@@ -13,12 +13,14 @@
             </div>
             <div class="about-container ">
                 <h1>Tentang kami</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. 
-                    Praesent eleifend pretium leo, eu faucibus leo porttitor ac. 
-                    Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci.
-                </p>
+                <div class="w-4">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Fusce dictum commodo massa sit amet bibendum. Curabitur molestie id eros quis interdum. 
+                        Praesent eleifend pretium leo, eu faucibus leo porttitor ac. 
+                        Duis dignissim, mauris et ornare cursus, dui quam consequat tortor, ut pulvinar leo ex nec orci.
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -57,7 +59,7 @@
 
         <div class="mitra-container">
                 <h1 class="mb-5">Mitra Kami</h1>
-                <Carousel :value="salons" :numVisible="5" :numScroll="1" :circular="true" class="custom-carousel">
+                <Carousel containerClass="mb-5" :value="salons" :numVisible="5" :numScroll="1" :circular="true" class="custom-carousel">
                     <template #item="salon">
                         <salon-card 
                         :name="salon.data.name"
@@ -311,11 +313,15 @@ export default {
     color: white;
 }
 .about-container{
-    font-family: 'Poppins', sans-serif;
     border-radius: 20px;
     background-color: white;
     margin: 10em;
     padding: 10em;
+    background-image: url("../../../public/images/priti/tentang.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+    background-size: 50% ;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
@@ -323,12 +329,19 @@ export default {
     margin-top: 60em
 }
 .about-container h1{
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: #005faa;
 }
+.about-container p {
+    font-family: 'Open Sans', sans-serif;
+    color: #454545;
+    font-size: 1em;
+
+}
 .statistic-container {
     width: 100%;
-    margin-top: 23em;
+    margin-top: 27em;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -394,7 +407,8 @@ export default {
     font-size: 1.5em;
 }
 .mitra-container {
-    margin-top: 10em;
+    margin-top: 20em;
+    margin-bottom: 20em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -439,7 +453,7 @@ export default {
 }
 .footer-landing {
     background: white;
-
+    border-top: 1px solid #d0d0d0;
 }
 .footer-text {
     font-family: 'Open Sans', sans-serif;

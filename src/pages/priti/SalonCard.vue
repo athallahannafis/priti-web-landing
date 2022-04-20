@@ -40,7 +40,7 @@ export default {
     width: fit-content;
     border-radius: 15px;
     padding: 1.5em;
-    box-shadow: 0px 3px 5px rgba(0,0,0,.02), 0px 0px 2px rgba(0,0,0,.05), 0px 1px 4px rgba(0,0,0,.08);
+    box-shadow: 0px 5px 5px #888888;
 
 }
 .salon-container h4 {
