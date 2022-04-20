@@ -1,8 +1,7 @@
 <template>
     <div class="topbar-priti lg-static">
-        <router-link to="/" class="layout-topbar-logo">
+        <router-link to="/" class="w-6 mt-8 ml-3">
             <img alt="Logo" :src="topbarImage()" />
-            <span>LOGO_PRITI</span>
         </router-link>
         
         <a class="cursor-pointer block lg:hidden text-700 p-ripple" v-ripple
@@ -36,7 +35,7 @@ export default {
             this.$emit('topbar-menu-toggle', event);
         },
         topbarImage() {
-            return this.$appState.darkTheme ? 'images/logo-white.svg' : 'images/logo-dark.svg';
+            return "images/priti/logo-white.png";
         },
         test() {
             console.log("Pressed");
