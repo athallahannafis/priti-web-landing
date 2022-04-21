@@ -1,28 +1,27 @@
 <template>
-    <div class="layout-topbar">
-        <router-link to="/" class="layout-topbar-logo">
+    <div class="topbar-priti lg-static">
+        <router-link to="/" class="w-6 mt-8 ml-3">
             <img alt="Logo" :src="topbarImage()" />
-            <span>SAKAI</span>
         </router-link>
-
-        <button class="p-link layout-topbar-menu-button layout-topbar-button"
-            v-styleclass="{ selector: '@next', enterClass: 'hidden', enterActiveClass: 'scalein', 
-            leaveToClass: 'hidden', leaveActiveClass: 'fadeout', hideOnOutsideClick: true}">
-            <i class="pi pi-ellipsis-v"></i>
-        </button>
         
-
-        <ul class="layout-topbar-menu hidden lg:flex origin-top">
-            <li>
-                <Button label="Tentang kami" @click="test()" class="p-button-link mr-2 mb-2" />
-            </li>
-            <li>
-                <Button label="Mitra" @click="test()" class="p-button-link mr-2 mb-2" />
-            </li>
-            <li>
-                <Button label="Fitur" @click="test()" class="p-button-link mr-2 mb-2" />
-            </li>
-        </ul>
+        <a class="cursor-pointer block lg:hidden text-700 p-ripple" v-ripple
+            v-styleclass="{ selector: '@next', enterClass: 'hidden', leaveToClass: 'hidden', hideOnOutsideClick: true }">
+            <i class="pi pi-bars text-4xl"></i>
+        </a>
+        
+        <div class=" align-items-center flex-grow-1 justify-content-between hidden lg:flex absolute lg:static w-full left-0 px-6 lg:px-0 z-2" style="top:92%">
+            <ul class="layout-topbar-menu hidden lg:flex origin-top">
+                <li>
+                    <Button label="Tentang kami" @click="smoothScroll('.about-container')" class="p-button-link mr-2 mb-2 font-button-color" />
+                </li>
+                <li>
+                    <Button label="Mitra" @click="smoothScroll('.mitra-container')" class="p-button-link mr-2 mb-2 font-button-color" />
+                </li>
+                <li>
+                    <Button label="Fitur" @click="smoothScroll('.fitur-container')" class="p-button-link mr-2 mb-2 font-button-color" />
+                </li>
+            </ul>
+        </div>
     </div>
 </template>
 
@@ -36,10 +35,15 @@ export default {
             this.$emit('topbar-menu-toggle', event);
         },
         topbarImage() {
-            return this.$appState.darkTheme ? 'images/logo-white.svg' : 'images/logo-dark.svg';
+            return "images/priti/logo-white.png";
         },
         test() {
             console.log("Pressed");
+        },
+        smoothScroll(id){
+            document.querySelector(id).scrollIntoView({
+                behavior: 'smooth'
+            });
         }
     },
     computed: {
@@ -49,3 +53,8 @@ export default {
     }
 }
 </script>
+<style scoped>
+.font-button-color{ 
+    color:white;
+}
+</style>
